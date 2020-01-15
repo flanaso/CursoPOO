@@ -1,4 +1,4 @@
-package repaso;
+package introduccion.repaso;
 
 public class Sintaxis {
 	public static void main(String[] args) {
@@ -8,7 +8,6 @@ public class Sintaxis {
 		int edadLuis = 21;
 		
 		//Operador ternario
-		int mayor = edadLuis > edadJose || 5 > 3 ? 2 : 1;
 		if (edadLuis > edadJose) {
 			System.out.println("Luis es mayor");
 		} else {

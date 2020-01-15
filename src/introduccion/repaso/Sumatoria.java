@@ -1,4 +1,4 @@
-package repaso;
+package introduccion.repaso;
 
 public class Sumatoria {
 	public static void main(String[] args) {

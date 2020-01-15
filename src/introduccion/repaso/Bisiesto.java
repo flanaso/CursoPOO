@@ -1,4 +1,4 @@
-package repaso;
+package introduccion.repaso;
 
 public class Bisiesto {
 	public static void main(String[] args) {
