@@ -7,15 +7,14 @@ public class Juego {
 	
 	public Juego() {
 		numero = (int) (Math.random() * 10);
-		numeroIntentos = 1;
+		numeroIntentos = 0;
 		adivinado = false;
 	}
 	
 	public void adivinar(int intento) {
+		numeroIntentos++;
 		if (intento == numero) {
 			adivinado = true;
-		} else {
-			numeroIntentos++;
 		}
 	}
 
@@ -39,7 +38,7 @@ public class Juego {
 		return adivinado;
 	}
 
-	public void estaAdivinado(boolean adivinado) {
+	public void setAdivinado(boolean adivinado) {
 		this.adivinado = adivinado;
 	}
 }
