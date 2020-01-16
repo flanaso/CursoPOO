@@ -29,7 +29,7 @@ public class Cuenta {
 	}
 	
 	public void setSaldo(int saldo) {
-		this.saldo = saldo;
+		this.saldo = saldo - 100;
 	}
 	
 

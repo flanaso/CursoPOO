@@ -1,16 +1,29 @@
 package introduccion.banco.objetos;
 
+import java.util.Scanner;
+
 public class MainObjetos {
 	public static void main(String[] args) {
-		Cuenta cuentaJohan = new Cuenta(10, 200);
-		Cuenta cuentaAguirre = new Cuenta(11, 600);
+		Scanner entrada = new Scanner(System.in);
 		
+		
+		System.out.println("Introduzca el no. de cuenta de Johan");
+		int noCuentaJohan = entrada.nextInt();
+		System.out.println("Introduzca el saldo inicial de Johan");
+		int saldoJohan = entrada.nextInt();
+		
+		System.out.println("Introduzca el no. de cuenta de Aguirre");
+		int noCuentaAguirre = entrada.nextInt();
+		System.out.println("Introduzca el saldo inicial de Aguirre");
+		int saldoAguirre = entrada.nextInt();
+		entrada.close();
+		
+		Cuenta cuentaJohan = new Cuenta(20, 500);
 
-		cuentaJohan.transferir(50, cuentaAguirre);
-		
-		System.out.println("Johan ........");
+		cuentaJohan.setSaldo(700);
+		Cuenta cuentaAguirre = new Cuenta(noCuentaAguirre, saldoAguirre);
+
 		cuentaJohan.mostrarEstadoCuenta();
-		System.out.println("Aguirre ........");
 		cuentaAguirre.mostrarEstadoCuenta();
 	}
 }
