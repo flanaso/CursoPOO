@@ -2,10 +2,14 @@ package libreria;
 
 public class Libreria {
 	private Prestamo[] prestamos;
+	private Usuario[] usuarios;
+	private Libro[] libros;
 	private int i;
 	
 	public Libreria() {
 		prestamos = new Prestamo[20];
+		usuarios = new Usuario[50];
+		libros = new Libro[200];
 		i = 0;
 	}
 	
